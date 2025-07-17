@@ -26,19 +26,17 @@ const GradientBackground = () => {
         
         {/* Subheading */}
         <h2 className="text-4xl md:text-5xl font-semibold text-white mb-12 leading-tight">
-          Lorem, ipsum dolor.
-          <br />
-          Lorem, ipsum.
+          Connecting Mind To Matter
         </h2>
         
         {/* Description */}
         <div className="max-w-3xl mx-auto">
           <p className="text-xl md:text-2xl text-gray-300 mb-8">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            We’re willing prosthesis technology into the next age with leading techniques in neural mapping to understand the language of action.
           </p>
           
           <p className="text-lg text-gray-400 leading-relaxed max-w-2xl mx-auto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptates pariatur dolorum, repellendus excepturi sint.
+            See how we accomplish this in our EEG analysis tool, our ST–GNN, and prosthetic hand device.
           </p>
         </div>
         

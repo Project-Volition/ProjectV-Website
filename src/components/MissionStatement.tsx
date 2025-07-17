@@ -1,33 +1,33 @@
 const MissionStatement = () => {
     return(
-        <section className="py-20 px-6 bg-gradient-to-bl from-gray-900 via-black to-gray-800">
+        <section className="py-5 px-6 bg-gradient-to-bl from-gray-900 via-black to-gray-800">
             <div className="max-w-6xl mx-auto">
-                <div className="mb-16">
+                <div className="mb-10">
                     <h2 className="text-4xl md:text-5xl font-bold text-green-400 mb-4">
                         Mission Statement
                     </h2>
                 </div>
 
                 {/* Vision & Mission Grid */}
-                <div className="grid md:grid-cols-2 gap-16 mb-20">
+                <div className="grid md:grid-cols-2 gap-10 mb-5">
                   
                   {/* Our Vision */}
                   <div className="space-y-4">
-                    <h3 className="text-3xl font-bold text-white/70 flex items-center gap-2 underline decoration-white/80">
+                    <h3 className="text-3xl font-bold text-white/70 flex items-center gap-2">
                       Our Vision
                     </h3>
                     <p className="text-gray-300 leading-relaxed text-base">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsa ullam dolorum ex temporibus odio atque dicta, exercitationem in a rem tempore assumenda voluptatum facilis fuga quisquam. Dignissimos officiis eum sint cumque porro repudiandae dolorum! ipsum dolor sit amet consectetur adipisicing elit. Accusantium veniam quos enim pariatur minus delectus quas, doloremque reiciendis. Illo magnam repudiandae quibusdam dolorem mollitia officia assumenda ad eos.
+                        There's a gap in advanced prosthetic devices and accessible prosthetic devices that must be filled if we are to aid people in all walks of life. It’s not just about making something that’s good enough, it’s about creating a functional model of the motor commands and interpreting them to restore quality of life to those afflicted by limb loss. Our system is built to generalize to everyone and operate on the level of the most complex human limbs. Restoring users' volition, with no limit.
                     </p>
                   </div>
 
                   {/* Our Mission */}
                   <div className="space-y-4">
-                    <h3 className="text-3xl font-bold text-white/70 flex items-center gap-2 underline decoration-white/80">
+                    <h3 className="text-3xl font-bold text-white/70 flex items-center gap-2">
                       Our Mission
                     </h3>
                     <p className="text-gray-300 leading-relaxed text-base">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe dolorum assumenda nulla porro omnis iusto tenetur commodi, optio, cum tempora in. Reprehenderit mollitia veniam, vel quasi dolores numquam illum sapiente repudiandae voluptatem eveniet ratione illo., ipsum dolor sit amet consectetur adipisicing elit. At, quis! Aliquam facilis nobis magni fuga! Nobis eaque esse magni iusto rem necessitatibus, porro facilis quae mollitia omnis repellat.
+                      We aim to develop both mechanical and software systems to rehabilitate those suffering from limb loss. The first system is a device that records EEG data at the scalp and feeds this to a ST-GNN classification model that can interpret event related potentials into action. The second system is the device that interprets and carries out the action or series of actions- the mechanical limb. In combination, these systems recreate the top down motor control process to restore functionality to the patient’s lost limb and improve quality of life.
                     </p>
                   </div>
                   

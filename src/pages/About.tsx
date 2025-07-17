@@ -1,5 +1,6 @@
 import Navbar from "../components/NavigationBar";
 import Footer from "../components/Footer";
+import { Linkedin } from "lucide-react";
 
 const About = () => {
   const teamMembers = [
@@ -8,28 +9,32 @@ const About = () => {
       role: "Project Leader",
       image: "/images/sarah.jpg", // Replace with actual image paths
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, esse quod. Repudiandae provident aliquam consequuntur.",
-      achievements: "• Biomedical Engineer\n• Working on Degree at RPI\n• Goat"
+      achievements: "• Biomedical Engineer\n• Working on Degree at RPI\n• Goat",
+      linkedin: "https://www.linkedin.com/in/louis-singe/"
     },
     {
       name: "Stephanie Chi",
       role: "Idk what she does tbh", 
       image: "/images/david.jpg",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, esse quod. Repudiandae provident aliquam consequuntur.",
-      achievements: "• Biology/Psychology Major\n• Working on Degree at SBU\n• J*bless"
+      achievements: "• Biology/Psychology Major\n• Working on Degree at SBU\n• J*bless",
+      linkedin: ""
     },
     {
       name: "Declan Boyd",
       role: "Idk either",
       image: "/images/maria.jpg", 
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, esse quod. Repudiandae provident aliquam consequuntur.",
-      achievements: "• Computer Systems Engineering Major\n• Working on Degree at RIT\n• Formerly world's youngest person"
+      achievements: "• Computer Systems Engineering Major\n• Working on Degree at RIT\n• Formerly world's youngest person",
+      linkedin: ""
     },
     {
       name: "Dylan Sylwester",
       role: "Idk what my actual title is",
       image: "/images/james.jpg",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, esse quod. Repudiandae provident aliquam consequuntur.",
-      achievements: "• Computer Science Major\n• Dropout\n• Sometimes researches, sometimes doesn't"
+      achievements: "• Computer Science Major\n• Dropout\n• Sometimes researches, sometimes doesn't",
+      linkedin: "https://www.linkedin.com/in/dylan-sylwester/"
     }
   ];
 
@@ -125,6 +130,19 @@ const About = () => {
                     <div className="text-gray-400 whitespace-pre-line">
                       {member.achievements}
                     </div>
+                  </div>
+
+                  {/*LinkedIns*/}
+                  <div className="pt-6">
+                    <a
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center space-x-3 bg-green-400/20 hover:bg-green-400/30 border border-green-400/50 hover:border-green-400 text-green-400 px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105"
+                    >
+                      <Linkedin className="w-5 h-5"/>
+                      <span className="font-medium">Connect on LinkedIn</span>
+                    </a>
                   </div>
                 </div>
               </div>

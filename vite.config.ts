@@ -2,10 +2,10 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
-// https://vite.dev/config/
-export default defineConfig(({ command }) => {
-  // Development: base = '/', Production: base = '/ProjectV-Website/'
-  const base = command === 'serve' ? '/' : '/ProjectV-Website/';
+export default defineConfig(() => {
+  // Check if we're building for GitHub Pages deployment
+  const isGitHubPages = process.env.GITHUB_PAGES === 'true';
+  const base = isGitHubPages ? '/ProjectV-Website/' : '/';
   
   return {
     plugins: [

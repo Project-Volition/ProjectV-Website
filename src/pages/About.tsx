@@ -8,32 +8,32 @@ const About = () => {
       name: "Louis Singe",
       role: "Project Leader",
       image: "/images/sarah.jpg", // Replace with actual image paths
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, esse quod. Repudiandae provident aliquam consequuntur.",
-      achievements: "• Biomedical Engineer\n• Working on Degree at RPI\n• Goat",
+      description: "I specialize in medical devices that utilize machine learning and electromechanical systems to interpret and respond to biosignals. I seek out difficult problems in the medical field and explore innovative solutions. My passion lies in mechanical design— I have designed several prosthetic devices using silicone molding and cable driven techniques and aim for elegant, functional solutions.",
+      developmentRoles: "• Developed Ensemble SVM Classification Model\n• Developed EEG Analysis Suite\n• Designed 3 Generations of 3D-Printed Prosthetic hands",
       linkedin: "https://www.linkedin.com/in/louis-singe/"
     },
     {
       name: "Stephanie Chi",
-      role: "Idk what she does tbh", 
+      role: "Head Experiment Designer", 
       image: "/images/david.jpg",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, esse quod. Repudiandae provident aliquam consequuntur.",
-      achievements: "• Biology/Psychology Major\n• Working on Degree at SBU\n• J*bless",
-      linkedin: ""
+      description: "I am an undergraduate student majoring in Biology and Psychology at Stony Brook University, with a strong interest in human physiology and neuroscience. I am passionate about science communications, explaining complicated information and data, and translating that into the vernacular for the layperson, but want to be knowledgeable about such topics. I have a deep interest in the intersection of biology, chemistry and physics to understand how complex systems function in both the natural and engineered world. I’m especially fascinated by how electrical signals, molecular interactions and mechanical forces come together in the body to produce life as we know it. ",
+      developmentRoles: "• Experiment design\n• Data collection\n• Research on hand physical therapy",
+      linkedin: "https://www.linkedin.com/in/stephanie-chi-meili/"
     },
     {
       name: "Declan Boyd",
-      role: "Idk either",
+      role: "Head of Control Subsystem",
       image: "/images/maria.jpg", 
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, esse quod. Repudiandae provident aliquam consequuntur.",
-      achievements: "• Computer Systems Engineering Major\n• Working on Degree at RIT\n• Formerly world's youngest person",
-      linkedin: ""
+      description: "I’m an undergraduate student at Rochester Institute of Technology where I’m studying Computer Engineering. I am passionate about applying my skills that I’ve developed 	over the years such as my knowledge of low-level programming languages, experience with microcontroller applications, and learned medical knowledge. I’m excited to apply these skills to further develop the connections between man and machine and contribute to the success of this research team in its advances to prosthetics.",
+      developmentRoles: "• Development of the Impulse to Movement interpretation system\n• Integration of Microcontroller Control System for articulation\n• Test Subject #1",
+      linkedin: "https://www.linkedin.com/in/declan-james-boyd-75b35a358/"
     },
     {
       name: "Dylan Sylwester",
-      role: "Idk what my actual title is",
+      role: "Software Architect",
       image: "/images/james.jpg",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, esse quod. Repudiandae provident aliquam consequuntur.",
-      achievements: "• Computer Science Major\n• Dropout\n• Sometimes researches, sometimes doesn't",
+      description: "I’m an aspiring software engineer, I always try my best to expand my knowledge in this field. I’m almost entirely self taught, learning through AI and YouTube videos to help sharpen my development skills. When I build, I aim to make things easily navigable, efficient, and pretty. Currently, I am working towards becoming a full stack developer, learning and using modern methods like React, Next.js, Supabase, and Vercel while experimenting with different APIs for my next project. I made this website so any feedback would be greatly appreciated!",
+      developmentRoles: "• Full Stack Developer\n• Analyzes EEG time series\n• Researcher",
       linkedin: "https://www.linkedin.com/in/dylan-sylwester/"
     }
   ];
@@ -126,9 +126,9 @@ const About = () => {
                   </p>
                   
                   <div className="pt-4">
-                    <h4 className="text-lg font-semibold text-white mb-3">Key Achievements</h4>
+                    <h4 className="text-lg font-semibold text-white mb-3">Development Roles</h4>
                     <div className="text-gray-400 whitespace-pre-line">
-                      {member.achievements}
+                      {member.developmentRoles}
                     </div>
                   </div>
 

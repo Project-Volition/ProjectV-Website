@@ -10,7 +10,7 @@
     "build:github:win": "set GITHUB_PAGES=true && npm run build",
     "lint": "eslint .",
     "preview": "npm run build && vite preview",
-    "predeploy": "npm run build:github:win",
+    "predeploy": "tsc -b && vite build --config vite.config.github.ts",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {

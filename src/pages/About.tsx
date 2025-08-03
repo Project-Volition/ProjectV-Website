@@ -7,7 +7,7 @@ const About = () => {
     {
       name: "Louis Singe",
       role: "Project Leader",
-      image: "/images/sarah.jpg", // Replace with actual image paths
+      image: "/images/louisBioPic.jpg", // Replace with actual image paths
       description: "I specialize in medical devices that utilize machine learning and electromechanical systems to interpret and respond to biosignals. I seek out difficult problems in the medical field and explore innovative solutions. My passion lies in mechanical design— I have designed several prosthetic devices using silicone molding and cable driven techniques and aim for elegant, functional solutions.",
       developmentRoles: "• Developed Ensemble SVM Classification Model\n• Developed EEG Analysis Suite\n• Designed 3 Generations of 3D-Printed Prosthetic hands",
       linkedin: "https://www.linkedin.com/in/louis-singe/"
@@ -15,7 +15,7 @@ const About = () => {
     {
       name: "Stephanie Chi",
       role: "Head Experiment Designer", 
-      image: "/images/david.jpg",
+      image: "/images/stephaBioPic.jpg",
       description: "I am an undergraduate student majoring in Biology and Psychology at Stony Brook University, with a strong interest in human physiology and neuroscience. I am passionate about science communications, explaining complicated information and data, and translating that into the vernacular for the layperson, but want to be knowledgeable about such topics. I have a deep interest in the intersection of biology, chemistry and physics to understand how complex systems function in both the natural and engineered world. I’m especially fascinated by how electrical signals, molecular interactions and mechanical forces come together in the body to produce life as we know it. ",
       developmentRoles: "• Experiment design\n• Data collection\n• Research on hand physical therapy",
       linkedin: "https://www.linkedin.com/in/stephanie-chi-meili/"
@@ -23,7 +23,7 @@ const About = () => {
     {
       name: "Declan Boyd",
       role: "Head of Control Subsystem",
-      image: "/images/maria.jpg", 
+      image: "/images/declanBioPic.jpg", 
       description: "I’m an undergraduate student at Rochester Institute of Technology where I’m studying Computer Engineering. I am passionate about applying my skills that I’ve developed 	over the years such as my knowledge of low-level programming languages, experience with microcontroller applications, and learned medical knowledge. I’m excited to apply these skills to further develop the connections between man and machine and contribute to the success of this research team in its advances to prosthetics.",
       developmentRoles: "• Development of the Impulse to Movement interpretation system\n• Integration of Microcontroller Control System for articulation\n• Test Subject #1",
       linkedin: "https://www.linkedin.com/in/declan-james-boyd-75b35a358/"
@@ -31,7 +31,7 @@ const About = () => {
     {
       name: "Dylan Sylwester",
       role: "Software Architect",
-      image: "/images/james.jpg",
+      image: "/images/dylanBioPic.JPG",
       description: "I’m an aspiring software engineer, I always try my best to expand my knowledge in this field. I’m almost entirely self taught, learning through AI and YouTube videos to help sharpen my development skills. When I build, I aim to make things easily navigable, efficient, and pretty. Currently, I am working towards becoming a full stack developer, learning and using modern methods like React, Next.js, Supabase, and Vercel while experimenting with different APIs for my next project. I made this website so any feedback would be greatly appreciated!",
       developmentRoles: "• Full Stack Developer\n• Analyzes EEG time series\n• Researcher",
       linkedin: "https://www.linkedin.com/in/dylan-sylwester/"
@@ -86,23 +86,13 @@ const About = () => {
               {/* Image */}
               <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
                 <div className="relative">
-                  {/* Placeholder for actual image */}
-                  <div className="w-full h-96 lg:h-[500px] bg-gradient-to-br from-green-400/20 to-emerald-600/20 rounded-2xl flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-32 h-32 bg-green-400/30 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span className="text-4xl font-bold text-green-400">
-                          {member.name.split(' ').map(n => n[0]).join('')}
-                        </span>
-                      </div>
-                      <p className="text-green-400 font-semibold">Profile Photo</p>
-                    </div>
-                  </div>
+
                   {/* Replace above div with actual image: */}
-                  {/* <img 
+                  <img 
                     src={member.image} 
                     alt={member.name}
                     className="w-full h-96 lg:h-[500px] object-cover rounded-2xl"
-                  /> */}
+                  />
                   
                   {/* Gradient Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
